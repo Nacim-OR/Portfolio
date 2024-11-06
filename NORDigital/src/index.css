@@ -15,7 +15,7 @@
 
 @layer base {
   body {
-    @apply bg-n-9 text-n-1 text-base;
+    @apply bg-pri-f-3 text-n-1 text-base;
     font-family: var(--font-sora);
   }
 }
@@ -31,5 +31,5 @@ a.button:hover {
 }
 
 a:hover {
-  @apply underline text-p-3 animate;
+  @apply underline text-n-3 animate;
 }

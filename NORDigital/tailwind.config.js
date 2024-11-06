@@ -26,7 +26,25 @@ export default {
         },
         stroke: {
           // couleur traits
-          1: "#1c243f",
+          1: "#3B444D", // gris ardoise moyen
+          2: "#F9EDE4", // beige pale pour contraste léger
+        },
+        pri: {
+          f: {
+            1: "#9BA3AF", // bleu gris doux
+            2: "#D8DBE2", // gris ardoise
+            3: "#F2E7DC", // beige sable
+          },
+          a: {
+            1: "#F4C3B4", // saumon doux
+            2: "#607080", // bleu gris intense
+            3: "#E1E7EF", // bleu pale
+          },
+          c: {
+            1: "#2A2F36", // noir doux
+            2: "#4A5158", // gris foncé
+            3: "#F7F9FB", // blanc cassé
+          },
         },
       },
       fontFamily: {
