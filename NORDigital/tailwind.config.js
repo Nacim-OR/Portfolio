@@ -25,7 +25,6 @@ export default {
           9: "#070E27",
         },
         stroke: {
-          // couleur traits
           1: "#3B444D", // gris ardoise moyen
           2: "#F9EDE4", // beige pale pour contraste léger
         },
@@ -49,6 +48,9 @@ export default {
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/hero/hero.png')", // Exemple d'image de fond définie dans Tailwind
       },
     },
   },

@@ -3,7 +3,7 @@ import grid from "./grid.png";
 import elipseBlueBlur from "./elipse-blue-blur.png";
 
 // Illustrations
-import uiInterface from "./hero/ui-interface.svg";
+import hero from "./hero/hero.png";
 import bulletPoint1 from "./bullet-points/bullet-point-1.svg";
 import bulletPoint2 from "./bullet-points/bullet-point-2.svg";
 import bulletPoint3 from "./bullet-points/bullet-point-3.svg";
@@ -31,7 +31,7 @@ import icoLinkedin from "./ico/ico-linkedin.svg";
 import icoX from "./ico/ico-x.svg";
 
 export {
-  uiInterface,
+  hero,
   logoApp,
   grid,
   elipseBlueBlur,
