@@ -12,13 +12,13 @@ const Popup = ({ isOpen, onClose, title, children }) => {
                 onClick={onClose}
             />
 
-            {/* Fenêtre pop-up */}
+            {/* Fenêtre pop-up responsive */}
             <div
-                className="fixed z-50 bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl h-auto sm:h-3/4 overflow-auto transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                className="fixed z-50 bg-white rounded-lg shadow-lg p-4 sm:p-6 max-w-full w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 h-3/4 overflow-y-auto transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 onClick={(e) => e.stopPropagation()} // Empêcher la fermeture en cliquant dans le pop-up
             >
                 {/* Bouton de fermeture en haut à droite */}
-                <div className="flex justify-end ">
+                <div className="flex justify-end">
                     <button
                         onClick={onClose}
                         className="text-white bg-red-600 rounded-full p-2 hover:bg-red-700 focus:outline-none"

@@ -38,6 +38,8 @@ export default {
             1: "#F4C3B4", // saumon doux
             2: "#607080", // bleu gris intense
             3: "#E1E7EF", // bleu pale
+            4: "#C39C90", //saumon doux 20% plus foncée
+            5: "#92756C", // saumon doux 40% plus foncée
           },
           c: {
             1: "#2A2F36", // noir doux
