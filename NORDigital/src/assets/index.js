@@ -15,7 +15,15 @@ import logoSlack from "./branding/logo_slack.svg";
 import logoAmazon from "./branding/logo_amazon.svg";
 import logoZoom from "./branding/logo_zoom.svg";
 import logoNetflix from "./branding/logo_netflix.svg";
-
+import logoFirebase from "./ico/logo_firebase.svg";
+import logoSymfony from "./ico/logo_symfony.svg";
+import logoReact from "./ico/logo_react.svg";
+import logoExpress from "./ico/logo_express.svg";
+import logoNodejs from "./ico/logo_nodejs.svg";
+import logoMongodb from "./ico/logo_mongodb.svg";
+import logoMysql from "./ico/logo_mysql.svg";
+import logoTailwind from "./ico/logo_tailwind.svg";
+import logoTypescript from "./ico/logo_typescrypt.svg"
 // Icons
 import icoComment from "./ico/ico-comment.svg";
 import icoDashboard from "./ico/ico-dashboard.svg";
@@ -55,4 +63,14 @@ export {
   icoInstagram,
   icoLinkedin,
   icoX,
+  logoFirebase, 
+  logoExpress,
+  logoMongodb,
+  logoMysql,
+  logoNodejs,
+  logoReact,
+  logoSymfony,
+  logoTailwind,
+  logoTypescript,
+  
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from './Container';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return (
@@ -9,26 +10,25 @@ export const Header = () => {
                     
                     {/* Logo */}
                     <div className="flex items-center">
-                        <h4 className="h3 relative after:bg-pri-a-1 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-1000 cursor-pointer">
+                        <Link to="/" className="h3 relative after:bg-pri-a-1 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-1000 cursor-pointer">
                             NOR'Digital
-                        </h4>
+                        </Link>
                     </div>
 
                     {/* Navigation Links and Icons */}
                     <div className="flex items-center space-x-6">
-                        <a href="" className="text-sm md:text-base">Mes tarifs</a>
-                        <a href="" className="text-sm md:text-base">Prendre contact</a>
-                        
+                        <Link to="/tarif" className="text-sm md:text-base">Mes tarifs</Link>
+                        <a href="https://forms.gle/SQePZgWNcg5ucBB97" title="prendre contact" target="_blank" rel="noopener noreferrer" >Prendre contact</a>
                         
                         {/* Icons */}
                         <div className="flex items-center space-x-3">
                             <a href="./src/assets/cv.pdf" target="_blank" download title="Télécharger mon CV" className="flex items-center justify-center w-8 h-8 rounded-full bg-pri-a-1 hover:bg-pri-f-3 hover:scale-110">
                                 <img src="https://www.svgrepo.com/show/10480/download-symbol.svg" alt="télécharger mon cv" className="w-4 h-4" />
                             </a>
-                            <a href="https://linkedin.com/in/nacim-ould-rabah" target="_blank" rel="noopener noreferrer" title="Mon LinkedIn" className="flex items-center justify-center w-8 h-8 rounded-full bg-pri-a-1  hover:bg-pri-f-3 hover:scale-110">
+                            <a href="https://linkedin.com/in/nacim-ould-rabah" target="_blank" rel="noopener noreferrer" title="Mon LinkedIn" className="flex items-center justify-center w-8 h-8 rounded-full bg-pri-a-1 hover:bg-pri-f-3 hover:scale-110">
                                 <img src="https://img.icons8.com/ios11/512/linkedin.png" alt="LinkedIn" className="w-4 h-4" />
                             </a>
-                            <a href="https://github.com/Nacim-OR" target="_blank" rel="noopener noreferrer" title="Mon GitHub" className="flex items-center justify-center w-8 h-8 rounded-full bg-pri-a-1  hover:bg-pri-f-3 hover:scale-110">
+                            <a href="https://github.com/Nacim-OR" target="_blank" rel="noopener noreferrer" title="Mon GitHub" className="flex items-center justify-center w-8 h-8 rounded-full bg-pri-a-1 hover:bg-pri-f-3 hover:scale-110">
                                 <img src="https://www.svgrepo.com/show/360450/github.svg" alt="GitHub" className="w-4 h-4" />
                             </a>
                         </div>
@@ -38,3 +38,5 @@ export const Header = () => {
         </section>
     );
 };
+
+export default Header;
