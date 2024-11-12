@@ -6,7 +6,9 @@ export const Button = ({ children, theme, className, href, target }) => {
         ? "bg-pri-a-2 text-pri-a-1 font-bold hover:bg-pri-a-1 hover:text-pri-a-2"
         : theme === "secondary"
         ? "bg-pri-a-1 text-pri-a-2 font-bold hover:bg-pri-a-2 hover:text-pri-a-1"
-        : "";
+        : ""
+        ? " text-pri-a-1 font-bold bg-gradient-to-r from-pri-a-2 to-pri-c-1" 
+        : theme === "thirdary";
   
     const renderButton = () => (
       <button
