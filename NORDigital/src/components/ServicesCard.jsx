@@ -57,7 +57,7 @@ const ServicesCard = () => {
 
                 {/* Popup pour les services */}
                 {isPopupOpen && (
-                    <Popup isOpen={isPopupOpen} onClose={closePopup} title="Nos Services">
+                    <Popup isOpen={isPopupOpen} onClose={closePopup} title="Mes Services">
                         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 ">
                             {cardsData.map((card, index) => (
                                 <div
