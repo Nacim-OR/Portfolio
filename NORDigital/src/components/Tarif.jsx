@@ -33,7 +33,7 @@ export const Tarif = () => {
         },
         {
             title: "E-commerce",
-            description: "Solutions complètes, innovantes et adapater pour les entreprises en ligne. ",
+            description: "Solutions complètes, innovantes et adaptées pour les entreprises en ligne.",
             basePrice: "1500€",
             options: [{ type: "Pack complet", features: ["Interface utilisateur", "Paiement sécurisé", "Gestion des produits"] }]
         },
@@ -46,12 +46,12 @@ export const Tarif = () => {
     ];
 
     return (
-        <section className="py-8 bg-hero-pattern">
+        <section className="py-8 bg-hero-pattern" aria-labelledby="tarif-heading">
             <Container>
                 <div className="flex justify-center items-center mb-8">
-                    <FaKey className="text-yellow-500 text-4xl ml-2" />
-                    <h2 className="text-4xl font-bold text-center text-gray-800 mx-4">Forfait clé en main</h2>
-                    <FaKey className="text-yellow-500 text-4xl ml-2" />
+                    <FaKey className="text-yellow-500 text-4xl ml-2" aria-hidden="true" />
+                    <h2 id="tarif-heading" className="text-4xl font-bold text-center text-gray-800 mx-4">Forfait clé en main</h2>
+                    <FaKey className="text-yellow-500 text-4xl ml-2" aria-hidden="true" />
                 </div>
                 <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     {tarifs.map((tarif, index) => (
@@ -63,11 +63,13 @@ export const Tarif = () => {
                             <p className="text-sm text-gray-500">À partir de</p>
                             <p className="text-3xl font-extrabold text-gray-800 mb-6">{tarif.basePrice}</p>
                             <p className="text-gray-600 mb-4">{tarif.description}</p>
+
                             <div className="mt-6">
                                 <Button
                                     href="https://forms.gle/SQePZgWNcg5ucBB97"
                                     target="_blank"
-                                    theme="primary"
+                                    aria-label={`Prendre contact pour ${tarif.title}`}
+                                    theme="secondary"
                                     className="hover:scale-105"
                                 >
                                     Prendre contact
@@ -78,6 +80,8 @@ export const Tarif = () => {
                                 <div key={idx} className="mb-4">
                                     <button
                                         onClick={() => toggleExpand(index + '-' + idx)}
+                                        aria-expanded={expandedIndex === index + '-' + idx}
+                                        aria-controls={`option-details-${index}-${idx}`}
                                         className={`w-full text-left p-4 rounded-lg ${option.recommended ? "bg-yellow-100" : "bg-gray-100"} border ${expandedIndex === index + '-' + idx ? "border-gray-300" : "border-transparent"} font-semibold text-gray-800 flex justify-between items-center transition duration-300`}
                                     >
                                         {option.type}
@@ -85,17 +89,17 @@ export const Tarif = () => {
                                             <span className="text-xs ml-2 text-yellow-700 font-semibold">Populaire</span>
                                         )}
                                         {expandedIndex === index + '-' + idx ? (
-                                            <FaChevronUp className="text-gray-500" />
+                                            <FaChevronUp className="text-gray-500" aria-hidden="true" />
                                         ) : (
-                                            <FaChevronDown className="text-gray-500" />
+                                            <FaChevronDown className="text-gray-500" aria-hidden="true" />
                                         )}
                                     </button>
 
                                     {expandedIndex === index + '-' + idx && (
-                                        <ul className="mt-2 ml-4 space-y-1 text-sm text-gray-700">
+                                        <ul id={`option-details-${index}-${idx}`} className="mt-2 ml-4 space-y-1 text-sm text-gray-700">
                                             {option.features.map((feature, i) => (
                                                 <li key={i} className="flex items-center">
-                                                    <FaCheckCircle className="text-green-500 mr-2" /> {feature}
+                                                    <FaCheckCircle className="text-green-500 mr-2" aria-hidden="true" /> {feature}
                                                 </li>
                                             ))}
                                         </ul>

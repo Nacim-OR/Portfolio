@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';  // Utilisation de react-helmet pour les balises meta et le SEO
 import { Container } from './Container';
 
 const encodeInfo = (info) => {
@@ -13,36 +12,6 @@ const MentionsLegales = () => {
 
     return (
         <main className="py-20 bg-pri-f-3 text-pri-c-2 font-sora">
-            {/* SEO Optimization with react-helmet */}
-            <Helmet>
-                <title>Mentions Légales | NOR'Digital</title>
-                <meta name="description" content="Consultez les mentions légales de NOR'Digital, entreprise individuelle spécialisée dans la création et développement web." />
-                <link rel="canonical" href="https://nordigital.com/mentionslegales" />
-                <meta name="robots" content="index, follow" />
-
-                {/* Structured Data for Organization */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "http://schema.org",
-                        "@type": "Organization",
-                        "name": "NOR'Digital",
-                        "url": "https://nordigital.com",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "42 rue du Maréchal Joffre",
-                            "addressLocality": "CARVIN",
-                            "postalCode": "62220",
-                            "addressCountry": "FR"
-                        },
-                        "contactPoint": {
-                            "@type": "ContactPoint",
-                            "telephone": "+33-6-67-34-77-85",
-                            "contactType": "Customer Service"
-                        }
-                    })}
-                </script>
-            </Helmet>
-
             <Container className="mx-auto max-w-4xl px-6">
                 <header className="text-center mb-10">
                     <h1 className="text-4xl font-bold text-pri-c-2">Mentions Légales</h1>
@@ -93,24 +62,14 @@ const MentionsLegales = () => {
                     </article>
 
                     <article>
-                        <h2 className="text-2xl font-semibold text-pri-c-2 mb-4">4. Données Personnelles</h2>
-                        <p>
-                            Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 et au RGPD (Règlement Général sur la Protection des Données), l'utilisateur dispose d'un droit d'accès, de rectification et de suppression des données le concernant.
-                        </p>
-                        <p>
-                            Pour toute demande relative à vos données personnelles, vous pouvez nous contacter par email à l'adresse suivante : <a href={`mailto:${email}`} className="text-pri-c-1 hover:underline" dangerouslySetInnerHTML={{ __html: email }}></a>.
-                        </p>
-                    </article>
-
-                    <article>
-                        <h2 className="text-2xl font-semibold text-pri-c-2 mb-4">5. Limitation de Responsabilité</h2>
+                        <h2 className="text-2xl font-semibold text-pri-c-2 mb-4">4. Limitation de Responsabilité</h2>
                         <p>
                             NOR'Digital s'efforce de fournir des informations précises et à jour sur le site. Cependant, nous ne garantissons pas l'exactitude, l'exhaustivité ou la pertinence des informations fournies. L'utilisateur est seul responsable de l'utilisation des informations fournies sur le site.
                         </p>
                     </article>
 
                     <article>
-                        <h2 className="text-2xl font-semibold text-pri-c-2 mb-4">6. Droit Applicable</h2>
+                        <h2 className="text-2xl font-semibold text-pri-c-2 mb-4">5. Droit Applicable</h2>
                         <p>
                             Les présentes mentions légales sont soumises au droit français. En cas de litige, et après une tentative de recherche de solution amiable, les tribunaux français seront seuls compétents.
                         </p>
