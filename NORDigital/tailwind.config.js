@@ -52,8 +52,9 @@ export default {
         sans: ["var(--font-sora)", ...fontFamily.sans],
       },
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/hero/hero.png')", // Exemple d'image de fond définie dans Tailwind
+        'hero-pattern': "url('/src/assets/hero/hero.png')", 
       },
+
     },
   },
   plugins: [

@@ -8,18 +8,15 @@ export const CallToAction = () => {
         <Container className="relative rounded-xl bg-gradient-to-r from-[#F4C3B4] to-[#C39C90] bg-opacity-90 p-8 md:p-12 max-w-2xl mx-auto shadow-lg transform hover:shadow-xl transition-shadow duration-300">
             <div className="flex flex-col items-center text-center space-y-4 md:space-y-6">
                 
-                {/* Titre de la section */}
                 <h2 id="cta-heading" className="text-2xl md:text-3xl font-bold text-gray-800">
                     Démarrez votre projet
                 </h2>
-                
-                {/* Texte descriptif */}
+
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">
                     Si vous avez besoin d'un site vitrine plus élaboré ou d'un site e-commerce,
                     n'hésitez pas à me contacter pour une estimation via ce formulaire.
                 </p>
-                
-                {/* Bouton "Prendre contact" */}
+
                 <div className="mt-6">
                     <Button
                         href="https://forms.gle/SQePZgWNcg5ucBB97"

@@ -20,8 +20,8 @@ function App() {
           element={
             <>
               <Helmet>
-                <title>Accueil | NOR'Digital</title>
-                <meta name="description" content="Découvrez NOR'Digital, votre partenaire pour le développement web et mobile. Transformez vos idées en réalité numérique." />
+                <title>Accueil | NOR Numérique</title>
+                <meta name="description" content="Découvrez NOR Numérique, votre partenaire pour le développement web et mobile. Transformez vos idées en réalité numérique." />
                 <link rel="canonical" href="https://nordigital.com/" />
               </Helmet>
               <Hero />
@@ -36,8 +36,8 @@ function App() {
           element={
             <>
               <Helmet>
-                <title>Tarifs | NOR'Digital</title>
-                <meta name="description" content="Consultez nos offres tarifaires pour les services de développement web et mobile de NOR'Digital." />
+                <title>Tarifs | NOR Numérique</title>
+                <meta name="description" content="Consultez nos offres tarifaires pour les services de développement web et mobile de NOR Numérique." />
                 <link rel="canonical" href="https://nordigital.com/tarif" />
               </Helmet>
               <Tarif />
@@ -49,8 +49,8 @@ function App() {
           element={
             <>
               <Helmet>
-                <title>Mentions Légales | NOR'Digital</title>
-                <meta name="description" content="Découvrez les mentions légales de NOR'Digital, entreprise individuelle spécialisée en développement numérique." />
+                <title>Mentions Légales | NOR Numérique</title>
+                <meta name="description" content="Découvrez les mentions légales de NOR Numérique, entreprise individuelle spécialisée en développement numérique." />
                 <link rel="canonical" href="https://nordigital.com/mentionslegales" />
               </Helmet>
               <MentionsLegales />

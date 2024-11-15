@@ -24,7 +24,7 @@ const MentionsLegales = () => {
                             Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance dans l'économie numérique, nous vous informons que le présent site est édité par :
                         </p>
                         <ul className="mt-2 space-y-1">
-                            <li><strong>Nom du site :</strong> NOR'Digital</li>
+                            <li><strong>Nom du site :</strong> NOR Numérique</li>
                             <li><strong>Responsable de publication :</strong> Nacim Ould-Rabah</li>
                             <li>
                                 <strong>Adresse :</strong>
@@ -57,14 +57,14 @@ const MentionsLegales = () => {
                     <article>
                         <h2 className="text-2xl font-semibold text-pri-c-2 mb-4">3. Propriété Intellectuelle</h2>
                         <p>
-                            Tous les éléments du site NOR'Digital (textes, images, logos, graphiques, etc.) sont protégés par les droits de propriété intellectuelle et ne peuvent être reproduits, utilisés ou diffusés sans l'autorisation écrite de l'éditeur.
+                            Tous les éléments du site NOR Numérique (textes, images, logos, graphiques, etc.) sont protégés par les droits de propriété intellectuelle et ne peuvent être reproduits, utilisés ou diffusés sans l'autorisation écrite de l'éditeur.
                         </p>
                     </article>
 
                     <article>
                         <h2 className="text-2xl font-semibold text-pri-c-2 mb-4">4. Limitation de Responsabilité</h2>
                         <p>
-                            NOR'Digital s'efforce de fournir des informations précises et à jour sur le site. Cependant, nous ne garantissons pas l'exactitude, l'exhaustivité ou la pertinence des informations fournies. L'utilisateur est seul responsable de l'utilisation des informations fournies sur le site.
+                            NOR Numérique s'efforce de fournir des informations précises et à jour sur le site. Cependant, nous ne garantissons pas l'exactitude, l'exhaustivité ou la pertinence des informations fournies. L'utilisateur est seul responsable de l'utilisation des informations fournies sur le site.
                         </p>
                     </article>
 
